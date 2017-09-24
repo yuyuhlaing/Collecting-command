@@ -1,0 +1,31 @@
+For window OS
+Command line format
+<command><Switch><Arguments>
+  eg. dir /A Test
+  Where,
+        dir is command
+        /A is switch
+        Test is Arguments because we focus on Test folder's sub folder
+        
+Changing the background and foreground color 
+  color <background color> <text color>
+  
+  0=Black         1=Blue
+  2=Green         3=Aqua
+  4=Red           5=Purple
+  6=Yellow        7=White
+  8=Gray          9=Light Blue
+  A=Light Green   B=Light Aqua
+  C=Light Red     D=Light Purple
+  E=Light Yellow  F=Bright White
+  
+  eg.color 02
+  background is black and foreground is green.
+  
+Changing the title of command prompt
+    title <choose the suitable words that you like>
+    eg. title Testing Example
+    
+
+  
+ 
