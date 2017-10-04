@@ -1,0 +1,115 @@
+For window OS
+Command line format
+<command><Switch><Arguments>
+  eg. >dir /A Test
+  Where,
+        dir is command
+        /A is switch
+        Test is Arguments because we focus on Test folder's sub folder
+        
+Changing the background and foreground color 
+  color <background color> <text color>
+  
+  0=Black         1=Blue
+  2=Green         3=Aqua
+  4=Red           5=Purple
+  6=Yellow        7=White
+  8=Gray          9=Light Blue
+  A=Light Green   B=Light Aqua
+  C=Light Red     D=Light Purple
+  E=Light Yellow  F=Bright White
+  
+  eg.>color 02
+  background is black and foreground is green.
+  
+Changing the title of command prompt
+    title <choose the suitable words that you like>
+    eg. >title Testing Example
+
+Gaining Administrator from ordinary command prompt(Runas command)
+
+    >runas /user:Administrator cmd
+    
+Help for command line
+    <command> /? 
+    help <command>
+    eg. >copy /?
+        >help copy
+        
+Watching Current directory
+    >chdir
+    
+Create folders
+  To create One folder
+    md <foldername>
+    mkdir <foldername>
+    
+  To create Many folder
+    md <foldername1> <foldername2> <foldername3>...<foldername n>
+    mkdir <foldername1> <foldername2> <foldername3>...<foldername n>
+    
+   Create folder name with space
+    md "<foldername>"
+    eg. >md "Hello World"
+    
+Rename folder and file name
+    ren <old_name> <new_name>
+    eg. >ren f1.txt f2.txt
+    
+Deleting folder
+   If empty folder
+      rd <foldername>
+   If the folder has sub folder or file
+      rd <foldername> /S
+      
+Deleting file
+  To delete one file
+    del <filename>
+    erase <filename>
+  To delete many file
+    del <filename1> <filename2> <filename3>...<filename n>
+    erase <filename1> <filename2> <filename3>...<filename n>
+    
+Create Text File
+  If the text has about one sentence
+    echo text-message > filename.extension
+    eg.>echo This is test file. > test.txt
+  If the text have many sentences
+    edit
+    
+Read text file
+   type <filename>
+   more <filename>
+   
+Copying files and folder
+  For files and empty folders
+    copy <source-file> <destination-path>
+    
+  For folder with sub file or folder
+    xcopy /S /I <foldername> <destination-path>
+    Where, /S is use to copy all sub file or folder but not for empty file or folder
+           /I is use if the foler doesn't have to create new folder with this name.
+           eg. xcopy /S /I Test C:\User\
+           
+Cut File and Folder
+    move <filename> <destination-path>
+    
+Hidden file and folder
+    attrib +h +s <filename or foldername>
+    Where, h is hidden
+           s is system 
+Remove hidden from file and folder
+    attrib -h -s <filename or foldername>
+   
+
+    
+    
+    
+
+    
+    
+
+    
+
+  
+ 
